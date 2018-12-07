@@ -1,0 +1,11 @@
+[Unit]
+Description=Rswe service
+
+[Service]
+ExecStartPre=/usr/bin/rswe
+ExecStart=/usr/bin/rswe
+Restart=always
+RestartSec=90
+
+[Install]
+WantedBy=multi-user.target
